@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PunkGih Gold Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.8;
+      font-size: 1.2em;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 1.5em 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    section {
+      padding: 3em 2em;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #ffffff;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    h2 {
+      color: #444;
+      margin-bottom: 1em;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .package-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5em;
+      margin-top: 2em;
+    }
+
+    .package {
+      background-color: #f9f9f9;
+      padding: 1.5em;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .package:hover {
+      transform: scale(1.05);
+    }
+
+    .package h3 {
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+      color: #222;
+    }
+
+    .package p {
+      font-size: 1.1em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      font-size: 1.1em;
+    }
+
+    input, select, button {
+      padding: 0.75em;
+      font-size: 1.1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5em;
+      background-color: #222;
+      color: white;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>༄ғᴇʀ•sᴛᴏʀᴇツ</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#packages">Gold Packages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Selamat datang di Pasar Emas Terbaik di Heartwood Online!</h2>
+    <p>Selamat datang di Heartwood Gold Store, sumber nomor satu Anda untuk layanan emas yang tepercaya dan efisien di jagat game Heartwood Online. Baik Anda pemain veteran yang ingin menimbun kekayaan atau pendatang baru yang ingin unggul, kami hadir untuk menyediakan layanan pengiriman emas yang cepat, aman, dan nyaman, yang dirancang khusus untuk memenuhi kebutuhan gaming Anda.</p>
+    <p>Platform kami didirikan oleh para pemain lama yang memahami betapa pentingnya memiliki pasokan emas yang stabil dalam game. Mulai dari membeli peralatan, meningkatkan senjata, membuka kemampuan baru, hingga berdagang dengan pemain lain, emas adalah bagian penting dari kemajuan di Heartwood Online. Dengan layanan kami, Anda tidak lagi perlu menghabiskan berjam-jam untuk grinding. Cukup pesan, dan biarkan kami yang mengurus sisanya.</p>
+    <p>Pengiriman kami hampir instan. Kami beroperasi dengan tim agen pengiriman aktif yang daring sepanjang siang dan malam, memastikan pesanan Anda terpenuhi dalam hitungan menit. Semua transaksi dilakukan di lingkungan yang aman dengan prioritas tinggi pada kebijaksanaan dan keamanan. Kami tidak pernah meminta informasi sensitif, dan semua pembayaran ditangani melalui saluran terenkripsi.</p>
+    <p>Tidak seperti banyak layanan lain, kami memiliki struktur harga yang transparan. Apa yang Anda lihat, itulah yang Anda bayar—tanpa biaya tersembunyi atau tambahan. Paket kami disusun untuk memberikan nilai terbaik untuk uang Anda, dengan bonus emas tersedia untuk pembelian dalam jumlah besar. Kami juga rutin mengadakan promosi dan menawarkan penawaran khusus untuk pelanggan setia kami.</p>
+    <p>Kami bangga mendukung komunitas Heartwood Online dengan menjaga layanan kami tetap aktif, etis, dan berpusat pada pelanggan. Tim dukungan kami selalu siap menjawab pertanyaan Anda, membantu proses pemesanan, dan menyelesaikan setiap masalah yang mungkin Anda miliki. Anda bisa menghubungi kami kapan saja melalui Discord, Email, WhatsApp, atau langsung melalui formulir di bawah ini.</p>
+    <p>Terima kasih telah memilih Heartwood Gold Store. Kepuasan Anda adalah kesuksesan kami. Gulir ke bawah untuk menjelajahi pilihan paket kami dan rasakan kemudahan jual beli emas!</p>
+    <div style="text-align:center; margin-top: 2em;">
+      <button onclick="document.getElementById('packages').scrollIntoView({ behavior: 'smooth' })">Lihat Paket</button>
+    </div>
+  </section>
+
+  <section id="packages">
+    <h2>Paket Emas Kami</h2>
+    <p>Kami menawarkan berbagai paket emas yang sesuai dengan kebutuhan Anda. Baik Anda mencari dorongan kecil atau merencanakan peningkatan skala besar, kami siap membantu Anda. Semua emas akan dikirimkan di dalam game dalam hitungan menit setelah konfirmasi pembelian. Berikut adalah penawaran standar kami:</p>
+    <div class="package-list">
+      <div class="package">
+        <h3>10k Gold</h3>
+        <p>Rp. 4.100</p>
+        <p>Sempurna untuk perbaikan cepat atau beberapa peningkatan. Ideal untuk pemain kasual atau mereka yang berada di tahap awal permainan.</p>
+      </div>
+      <div class="package">
+        <h3>50k Gold</h3>
+        <p>Rp. 20.500</p>
+        <p>Nilai terbaik untuk pemain skala menengah. Sangat bagus untuk membuat (crafting), pembelian item, dan perluasan perdagangan.</p>
+      </div>
+      <div class="package">
+        <h3>100k Gold</h3>
+        <p>Rp. 42.000</p>
+        <p>Emas serius untuk tujuan serius. Lengkapi perlengkapan legendaris atau berinvestasi dalam ekonomi guild (serikat) Anda.</p>
+      </div>
+      <div class="package">
+        <h3>200k Gold</h3>
+        <p>Rp. 84.000</p>
+        <p>Paket pamungkas. Untuk pengguna tingkat lanjut yang menginginkan akses penuh ke keuntungan dan prestise dalam game.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Order</h2>
+    <p>Untuk melakukan pemesanan, silakan isi nama pengguna Heartwood Online Anda, pilih paket emas, dan berikan metode kontak pilihan Anda. Tim kami akan segera menghubungi Anda untuk mengonfirmasi pesanan dan mengirimkan emas Anda di dalam game. Kami memastikan data Anda tetap pribadi dan transaksi diproses secara efisien. Untuk pertanyaan apa pun, jangan ragu untuk menghubungi kami melalui saluran dukungan kami.</p>
+    <form id="orderForm">
+      <label for="username">Heartwood Username:</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="package">Pilih Paket:</label>
+      <select id="package" name="package" required>
+        <option value="">-- Pilih Di Sini --</option>
+        <option value="p1">10k Gold - Rp. 4.100</option>
+        <option value="p2">50k Gold - Rp. 20.500</option>
+        <option value="p3">100k Gold - Rp. 42.000</option>
+        <option value="p4">200k Gold - Rp. 84.000</option>
+      </select>
+
+      <label for="contactMethod">Untuk menghubungi saya, Anda bisa menyebutkan Discord, Email, atau WhatsApp sebagai metode kontak pilihan Anda.</label>
+      <input type="text" id="contactMethod" name="contactMethod" required />
+
+      <button type="submit">Buat Pesanan</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Heartwood Gold Store. Not affiliated with Heartwood Online. All rights reserved. Powered by Epang</p>
+  </footer>
+
+  <script>
+    const orderForm = document.getElementById('orderForm');
+    orderForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = {
+        username: this.username.value,
+        package: this.package.value,
+        contact: this.contactMethod.value
+      };
+      alert(`Order Received!\nUsername: ${data.username}\nPackage: ${data.package}\nContact: ${data.contact}`);
+      this.reset();
+    });
+  </script>
+</body>
+</html>
